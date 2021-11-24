@@ -1,0 +1,152 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+
+}
+.cover-image{
+    background: url('sign.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.cover-image:after{
+position: absolute;
+content: "";
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background: rgba(0,0,0,0.7);
+}
+.inside{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    text-align: center;
+    padding: 60px 32px;
+    width: 370px;
+    transform: translate(-50%,-50%);
+    background: rgba(53, 51, 51, 0.4);
+    box-shadow: -1px 4px 20px 0px rgba(0,0,0,0.75);
+}
+.inside header{
+    color: white;
+    font-size: 33px;
+    font-weight: 600;
+    margin: 0 0 35px 0;
+}
+.field{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    background: rgba(255,255,255,0.94);
+}
+.field span{
+    color: #222;
+    width: 40px;
+    line-height: 45px;
+}
+.field input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color:#222;
+    font-size: 16px;
+}
+.spc{
+    margin-top: 16px;
+}
+.disp{
+    position: absolute;
+    right: 13px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #222;
+    display: none;
+    cursor: pointer;
+}
+.passwd-key:valid ~ .disp{
+display: block;
+}
+.passwd{
+text-align: left;
+margin: 10px 0;
+}
+.passwd a{
+    color: white;
+    text-decoration: none;
+}
+.passwd:hover a{
+    text-decoration: underline;
+}
+.field input[type="submit"]{
+    background: #3498db;
+    border: 1px solid #3498db;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.field input[type="submit"]:hover{
+    background: #2691db;
+}
+.lgin-opt{
+    color: white;
+    margin: 20px 0;
+}
+.link{
+    display: flex;
+    cursor: pointer;
+    color: white;
+    margin: 0 0 20px 0;
+}
+.fbook,.google{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 10px;
+}
+.fbook{
+    margin-left: 0;
+    background:#4267b2;
+    border: 1px solid #3e61a8;
+}
+.google{
+    background: #f22911;
+    border: 1px solid #f43019;
+}
+.fbook:hover{
+    background: #3e61a8;
+}
+.google:hover{
+    background: #f43019;
+}
+.link i{
+    font-size: 17px;
+}
+i span{
+    margin-left: 8px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+.sgnup{
+    color: white;
+    font-size: 15px;
+}
+.sgnup a{
+    color: #3498db;
+    text-decoration: none;
+  }
+.sgnup a:hover{
+    text-decoration: underline;
+  }
+  
